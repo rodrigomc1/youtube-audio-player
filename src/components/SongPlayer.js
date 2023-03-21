@@ -148,17 +148,6 @@ const SongPlayer = () => {
           url={state.song.url}
           playing={state.isPlaying}
           hidden
-          config={{
-            youtube: {
-              playerVars: {
-                origin: 'http://localhost:3000',
-                autoplay: 1,
-                controls: 0,
-                autohide: 1,
-                wmode: 'opaque',
-              },
-            },
-          }}
         />
         <CardMedia sx={{ width: '150px' }} image={state.song.thumbnail} />
       </Card>
